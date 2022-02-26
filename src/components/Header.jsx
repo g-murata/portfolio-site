@@ -3,7 +3,9 @@ export const Header = () => {
 
   return (
     <div className="test-wrapper">
-      このコンポーネントの名前は{componentName()}です。
+      <p className="text">
+        このコンポーネントの名前は{componentName()}です。
+      </p>
     </div>
   );
 };
