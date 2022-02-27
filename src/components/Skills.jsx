@@ -1,4 +1,9 @@
+import { useEffect } from 'react';
+
 export const Skills = () => {
+  const outputTest = () => { console.log('TEST'); };
+
+  useEffect(outputTest);
   return (
     <div id="skills">
       <div className="container">
