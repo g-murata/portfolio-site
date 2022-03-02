@@ -1,7 +1,7 @@
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 // 画像をそれぞれimport。
-import CoverImage from '../images/cover-image.jpg';
-import ProfileImage from '../images/profile-image.png';
+import CoverImage from '../images/react-rails.png';
+import ProfileImage from '../images/kobaton.jpeg';
 
 export const Header = () => {
   return (
@@ -11,8 +11,8 @@ export const Header = () => {
         <div className="display-table">
           <div className="display-table-contents">
             <div className="profile-thumb" style={{ backgroundImage: `url(${ProfileImage})` }}></div>
-            <h1 className="title-text">あなたの名前</h1>
-            <h3 className="title-text">あなたの肩書(ex.Engineer)</h3>
+            <h1 className="title-text">たーむー</h1>
+            <h3 className="title-text">バックエンドを主に担当するエンジニア</h3>
             <ul className="social-icons">
               <li className="icon-link">
                 {/* リンク先(href)は任意のURLを設定してください */}
