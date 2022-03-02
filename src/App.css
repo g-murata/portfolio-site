@@ -74,7 +74,7 @@ h3 {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -113,9 +113,10 @@ h3 {
 }
 
 .skills-container {
- display: flex;
- flex-wrap: wrap;
- text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 #contact {
