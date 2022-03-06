@@ -2,14 +2,14 @@ import { useEffect, useReducer } from 'react';
 import axios from 'axios';
 
 import { skillReducer, initialState, actionTypes } from '../reducers/skillReducer';
+import { requestStates } from '../constants';
 
 
 export const useSkills = () => {
   const [state, dispatch] = useReducer(skillReducer, initialState);
 
   const fetchReposApi = () => {
-    dispatch({ type: actionTypes.fetch });
-    axios.get('https://api.github.com/users/USER_NAME/repos')
+    axios.get('https://api.github.com/users/g-murata/repos')
       .then((response) => {
         const languageList = response.data.map(res => res.language)
         const countedLanguageList = generateLanguageCountObj(languageList)
@@ -20,9 +20,14 @@ export const useSkills = () => {
       });
   }
 
+  useEffect(() => {
+    if (state.requestState !== requestStates.loading) { return; }
+    fetchReposApi();
+  }, [state.requestState]);
+
 
   useEffect(() => {
-    fetchReposApi();
+    dispatch({ type: actionTypes.fetch });
   }, []);
 
   const generateLanguageCountObj = (allLanguageList) => {
