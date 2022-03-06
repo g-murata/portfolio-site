@@ -42,9 +42,12 @@ export const useSkills = () => {
     });
   };
 
+  const DEFAULT_MAX_PERCENTAGE = 100;
+  const LANGUAGE_COUNT_BASE = 10;
+
   const converseCountToPercentage = (count) => {
-    if (count > 10) { return 100; }
-    return count * 10;
+    if (count > LANGUAGE_COUNT_BASE) { return DEFAULT_MAX_PERCENTAGE; }
+    return count * LANGUAGE_COUNT_BASE;
   };
 
   const sortedLanguageList = () => (
