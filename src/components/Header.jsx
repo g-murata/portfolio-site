@@ -11,8 +11,8 @@ export const Header = () => {
         <div className="display-table">
           <div className="display-table-contents">
             <div className="profile-thumb" style={{ backgroundImage: `url(${ProfileImage})` }}></div>
-            <h1 className="title-text">たーむー</h1>
-            <h3 className="title-text">エンジニアしてますよ</h3>
+            <h1 className="title-text">むらた</h1>
+            <h3 className="title-text">エンジニア</h3>
             <ul className="social-icons">
               <li className="icon-link">
                 {/* リンク先(href)は任意のURLを設定してください */}
