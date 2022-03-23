@@ -1,6 +1,6 @@
 # What
 ポートフォリオサイト（自己紹介用サイト）です。<br>
-Techpitさんの教材を使用して作成。<br>
+Techpitさんの教材を使用して作成しています。<br>
 https://www.techpit.jp/courses/194
 
 <img width="1440" alt="スクリーンショット 2020-08-18 12 45 00" src="https://i.gyazo.com/6e9ff4464134a2dadc355919ac55bd62.png">
